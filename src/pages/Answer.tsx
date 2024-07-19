@@ -37,7 +37,6 @@ export default function Answer() {
       setSelectedOption(JSON.parse(selectedOptionString));
     }
   }, []);
-  console.log(selectedOption);
   const quizElements = quizData.map((quiz, index) => {
     let question = `question${index+1}`;
     let selectedAnswer: string = "";
